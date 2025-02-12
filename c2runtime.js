@@ -23703,14 +23703,14 @@ cr.behaviors.bound = function(runtime)
 	};
 }());
 cr.getObjectRefTable = function () { return [
+	cr.plugins_.Audio,
 	cr.plugins_.Browser,
-	cr.plugins_.Mouse,
 	cr.plugins_.Keyboard,
-	cr.plugins_.Touch,
+	cr.plugins_.Mouse,
 	cr.plugins_.TiledBg,
 	cr.plugins_.Sprite,
+	cr.plugins_.Touch,
 	cr.plugins_.Text,
-	cr.plugins_.Audio,
 	cr.behaviors.EightDir,
 	cr.behaviors.bound,
 	cr.behaviors.Bullet,
@@ -23749,7 +23749,8 @@ cr.getObjectRefTable = function () { return [
 	cr.system_object.prototype.cnds.LayerVisible,
 	cr.behaviors.Bullet.prototype.acts.SetSpeed,
 	cr.system_object.prototype.acts.RestartLayout,
-	cr.plugins_.Touch.prototype.cnds.OnHoldGestureObject,
-	cr.behaviors.EightDir.prototype.acts.SimulateControl
+	cr.plugins_.Sprite.prototype.acts.SetAngle,
+	cr.behaviors.EightDir.prototype.acts.SimulateControl,
+	cr.plugins_.Touch.prototype.cnds.OnHoldGestureObject
 ];};
 
